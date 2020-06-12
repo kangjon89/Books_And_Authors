@@ -1,0 +1,16 @@
+<button [routerLink]="['/new']">New</button>
+
+<table>
+  <tr>
+    <th>Authors</th>
+    <th>What do you want??</th>
+  </tr>
+
+  <tr *ngFor="let author of allAuthors">
+    <td>{{ author.name }}</td>
+    <td>
+      <button [routerLink]="['/edit', author._id]">Edit</button>
+      <button (click)="deleteAuthor(author._id)">Delete</button>
+    </td>
+  </tr>
+</table>

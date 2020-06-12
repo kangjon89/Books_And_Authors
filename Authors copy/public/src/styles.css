@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: aquamarine; */
+}
+/* h2 {
+  margin: 50px;
+} */
+table {
+  border: 3px solid rgb(129, 126, 126);
+  border-collapse: collapse;
+  margin-left: 35%;
+}
+/* body {
+  background: linear-gradient(#05fbff, #1d62f0);
+  text-align: center;
+} */
+th,
+td {
+  border-right: 2px #808080 solid;
+  border-left: 2px #808080 solid;
+}
+tr:nth-child(odd) {
+  background-color: rgb(60, 192, 224);
+}
+td {
+  padding: 15px;
+}
+th {
+  background-color: rgb(29, 145, 240);
+  padding: 15px;
+}

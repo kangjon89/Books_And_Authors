@@ -1,0 +1,12 @@
+<h3>Add a new author</h3>
+<div>
+  <div *ngIf="errorMessage">
+    <p>{{ errorMessage }}</p>
+  </div>
+  <form (submit)="createAuthor(addedAuthor)">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" [(ngModel)]="addedAuthor.name" />
+    <button (click)="cancel()">CANCEL</button>
+    <input type="submit" value="SUBMIT" />
+  </form>
+</div>
